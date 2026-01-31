@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <theme>standard</theme>
+        <reportName>BDD Cucumber Automation Report</reportName>
+        <documentTitle>Execution Report</documentTitle>
+        <encoding>utf-8</encoding>
+        <timelineEnabled>true</timelineEnabled>
+    </configuration>
+</extentreports>

@@ -1,0 +1,1 @@
+{"uuid":"d5e41279-6963-4e28-b85c-bb85bec3908f","name":"org.pages.qa.Registerpage.setup","children":["cc45795f-fc5a-4ed1-b636-539c0ea10015"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1769777637067,"stop":1769777641135}],"afters":[],"start":1769777637067,"stop":1769777641135}
