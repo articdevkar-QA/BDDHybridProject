@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.base.qa.Basetest;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -14,24 +13,34 @@ import com.google.common.io.Files;
 
 public class Screenshotutils 
 {
-	private static final String SCREENSHOT_PATH =
-     System.getProperty("user.dir") + "/Screenshot_output";
-	//"C:\\Users\\Administrator\\eclipse-workspace\\DemoWebBDDHybridFramework\\Screenshot_output";
+	
+	    private static final String SCREENSHOT_PATH =
+	            System.getProperty("user.dir") + "/Screenshot_output";
 
-public static String captureScreenshot(WebDriver driver, String testName) {
+	    public static String captureScreenshot(WebDriver driver, String testName) {
 
- String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
- String screenshotName = testName + "_" + timestamp + ".png";
+	        if (driver == null) {
+	            System.out.println("Driver is null. Screenshot not captured.");
+	            return null;
+	        }
 
- File srcFile = ((TakesScreenshot) Basetest.driver).getScreenshotAs(OutputType.FILE);
- File destFile = new File(SCREENSHOT_PATH + screenshotName);
+	        String timestamp =
+	                new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+	        String screenshotName = testName + "_" + timestamp + ".png";
 
- try {
-     Files.copy(srcFile, destFile);
- } catch (IOException e) {
-     e.printStackTrace();
- }
+	        File srcFile =
+	                ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
- return destFile.getAbsolutePath();
+	        File destFile = new File(SCREENSHOT_PATH, screenshotName);
+
+	        try {
+	            Files.createParentDirs(destFile);
+	            Files.copy(srcFile, destFile);
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+
+	        return destFile.getAbsolutePath();
+	    }
 }
-}
+	

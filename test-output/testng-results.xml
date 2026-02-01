@@ -1,47 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-31T13:57:22 IST" name="Suite" finished-at="2026-01-31T13:57:32 IST" duration-ms="9415">
+  <suite started-at="2026-02-01T14:32:26 IST" name="Suite" finished-at="2026-02-01T14:33:08 IST" duration-ms="41481">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.Testrunner.qa.CommunityTestRunner@4bbf6d0e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.Testrunner.qa.LoginTestrunner@4bbf6d0e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-01-31T13:57:22 IST" name="Test" finished-at="2026-01-31T13:57:32 IST" duration-ms="9415">
-      <class name="org.Testrunner.qa.CommunityTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.Testrunner.qa.CommunityTestRunner@4bbf6d0e]" started-at="2026-01-31T13:57:22 IST" name="setUpClass" finished-at="2026-01-31T13:57:23 IST" duration-ms="786" status="PASS">
+    <test started-at="2026-02-01T14:32:26 IST" name="Test" finished-at="2026-02-01T14:33:08 IST" duration-ms="41481">
+      <class name="org.Testrunner.qa.LoginTestrunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.Testrunner.qa.LoginTestrunner@4bbf6d0e]" started-at="2026-02-01T14:32:26 IST" name="setUpClass" finished-at="2026-02-01T14:32:27 IST" duration-ms="718" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@65ef9a0a]]>
+                <![CDATA[org.testng.TestRunner@1ed9d173]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.Testrunner.qa.CommunityTestRunner@4bbf6d0e]" started-at="2026-01-31T13:57:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-01-31T13:57:30 IST" duration-ms="7069" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.Testrunner.qa.LoginTestrunner@4bbf6d0e]" started-at="2026-02-01T14:32:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-01T14:32:42 IST" duration-ms="14845" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Community poll"]]>
+                <![CDATA["Successful login with valid credentials"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Community Functional Flow"]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.Testrunner.qa.CommunityTestRunner@4bbf6d0e]" started-at="2026-01-31T13:57:30 IST" name="tearDownClass" finished-at="2026-01-31T13:57:32 IST" duration-ms="1466" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.Testrunner.qa.LoginTestrunner@4bbf6d0e]" started-at="2026-02-01T14:32:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-01T14:32:54 IST" duration-ms="11821" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.Testrunner.qa.LoginTestrunner@4bbf6d0e]" started-at="2026-02-01T14:32:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-01T14:33:06 IST" duration-ms="12642" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Value is not matching expected [Demo Web Shop] but found [Demo Web Shop. Login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Value is not matching expected [Demo Web Shop] but found [Demo Web Shop. Login]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.stepdef.qa.LoginStepDef.the_user_enters_and_the_user_clicks_the_login_button(LoginStepDef.java:34)
+at ✽.the user enters "abcvfsass@gmail.com" and "Pass@1234"  the user clicks the login button(file:///C:/Users/Administrator/eclipse-workspace/DemoWebBDDHybridFramework/src/test/resources/features/login.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.Testrunner.qa.LoginTestrunner@4bbf6d0e]" started-at="2026-02-01T14:33:06 IST" name="tearDownClass" finished-at="2026-02-01T14:33:08 IST" duration-ms="1348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- org.Testrunner.qa.CommunityTestRunner -->
+      </class> <!-- org.Testrunner.qa.LoginTestrunner -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -40,12 +40,13 @@ public class Hooks
 	@After(order = 1)
 	public void tearDown(Scenario scenario) 
 	{
-		
 		if (scenario.isFailed()) {
-			String screenshotPath = Screenshotutils.captureScreenshot( driver, scenario.getName());
-			final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-            scenario.attach(screenshot, "image/png", "Failed_Step_Screenshot");
-		}
+            Screenshotutils.captureScreenshot(driver,scenario.getName());
+        }
+        driver.quit();
+	           
+	        
+		
 		
 		
 		
