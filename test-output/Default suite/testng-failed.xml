@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.Testrunner.qa.NewsletterRunner">
+      <class name="org.pages.qa.DWBCommunitypollpage">
         <methods>
-          <include name="setUpClass"/>
-          <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="TC001"/>
         </methods>
-      </class> <!-- org.Testrunner.qa.NewsletterRunner -->
+      </class> <!-- org.pages.qa.DWBCommunitypollpage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
